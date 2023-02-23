@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*flex wrap hace que el contenido si no cabe en el renglon se vaya  abajo*/
+.principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu{
+    width: 30%;
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+.contenedor {
+    width: 70%;
+    height: 80vh;
+    background-color: brown;
+}
+
+.reproductor {
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+}
+
+.buscador {
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+}
+
+.contenido {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+}
