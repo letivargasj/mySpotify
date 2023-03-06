@@ -51,4 +51,6 @@ const creaCards = () => {
 
 btnBuscar.addEventListener('keypress', () => {
     console.log('tecla', btnBuscar.value)
+    //input = document.getElementById("buscador");
+
 })
