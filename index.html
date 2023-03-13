@@ -10,8 +10,37 @@
 </head>
 
   <body>
-    <div class="principal">
-        <div class="menu"></div>
+      <div class="principal">
+        <div class="menu">
+          <div class="paises">
+            <div class="renglon">
+              Selecciona el país
+            </div>
+            <div class="renglon">
+              <div class="bandera">
+                <img src="./images/mx.png" class="logoImg" id="MX">
+              </div>
+              <div class="bandera">
+                <img src="./images/eua.png" class="logoImg" id="USA">
+              </div>
+              <div class="bandera">
+                <img src="./images/japon.png" class="logoImg" id="JP">  
+              </div>
+            </div>
+            <div class="renglon columna">
+              Buscar album
+              <input type="text" placeholder="Album" id="inputAlbum" class="inputBuscador">
+              <button id="btnBuscar">Buscar</button>
+              <div class="canciones" id="canciones">
+                <li style="font-size:  12px;">Nombre</li>
+                <p style="display: none;">id</p>
+                <button>Mostrar</button>
+              
+              </div>
+            </div>
+            
+          </div>
+        </div>
         <div class="contenedor">
             <div class="buscador">
               <input type="text" id="buscador" class="inputBuscador" placeholder="Escribe la canción">
@@ -20,7 +49,7 @@
             <div class="contenido" id="contenido"></div>
         </div>
         <div class="reproductor"></div>
-    </div>
+      </div>
 
     <template id="cardTop">
         <div class="card" style="width: 33%;">
@@ -36,8 +65,20 @@
           </div>
     </template>
 
+    <template id="album">
+     </template>
+
+    <template id="disco">
+      <div class="disco">
+        <img src="" style="width: 200px">
+        <p>Nombre</p>
+        <p>Popularidad</p>
+      </div>
+
+    </template>
+
     <script src="https://kit.fontawesome.com/e8f8d6036e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
-    </body>
+  </body>
 </html>
